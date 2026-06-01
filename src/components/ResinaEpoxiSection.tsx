@@ -128,9 +128,6 @@ export default function ResinaEpoxiSection({
               style={{ animationDelay: `${index * 80}ms` }}
             >
               <div className="relative overflow-hidden bg-white">
-                <span className="absolute top-4 left-4 z-10 inline-flex items-center gap-1.5 rounded-full bg-hazzin-navy-deep/[0.06] px-2.5 py-1 text-[9.5px] font-semibold uppercase tracking-[0.18em] text-hazzin-navy-deep/70">
-                  Endurecedor
-                </span>
                 <div className="aspect-square w-full flex items-center justify-center">
                   <img
                     src={product.image}
