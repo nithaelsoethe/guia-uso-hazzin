@@ -2,7 +2,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function Hero() {
   const scrollToGuides = () => {
-    document.getElementById('guias')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('resina-epoxi')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -16,7 +16,7 @@ export default function Hero() {
       />
       <div className="relative mx-auto w-full max-w-site px-5 sm:px-6 lg:px-16">
         <div className="grid lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-16 items-center">
-          <div className="order-2 lg:order-1 space-y-6 sm:space-y-8 animate-fade-in">
+          <div className="space-y-6 sm:space-y-8 animate-fade-in">
             <span className="inline-flex items-center gap-2 rounded-full border border-hazzin-navy-deep/10 bg-white px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.22em] text-hazzin-navy-deep/70 shadow-sm">
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-hazzin-field-green/60 opacity-75" />
@@ -61,7 +61,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="relative order-1 lg:order-2 animate-slide-in-right flex justify-center lg:justify-end">
+          <div className="relative animate-slide-in-right flex justify-center lg:justify-end">
             <img
               src="/hero-produtos.webp"
               alt="Produtos Hazzin"
