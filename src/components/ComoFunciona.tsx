@@ -23,8 +23,8 @@ const PASSOS = [
 
 export default function ComoFunciona() {
   return (
-    <section id="como-funciona" className="relative py-24 sm:py-32 bg-hazzin-surface scroll-mt-24">
-      <div className="mx-auto w-full max-w-site px-6 lg:px-16">
+    <section id="como-funciona" className="relative py-16 sm:py-24 lg:py-32 bg-hazzin-surface scroll-mt-24">
+      <div className="mx-auto w-full max-w-site px-5 sm:px-6 lg:px-16">
         <div className="mx-auto max-w-3xl text-center mb-14 sm:mb-20">
           <span className="inline-flex items-center gap-2 rounded-full border border-hazzin-navy-deep/10 bg-white px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.22em] text-hazzin-navy-deep/70 shadow-sm">
             Como usar este guia
@@ -38,7 +38,7 @@ export default function ComoFunciona() {
           {PASSOS.map((p, i) => (
             <div
               key={p.n}
-              className="group relative flex flex-col gap-5 rounded-3xl bg-white border border-hazzin-mist/60 p-7 sm:p-9 transition-all duration-500 hover:border-hazzin-navy-deep/15 hover:-translate-y-1 hover:shadow-[0_20px_45px_-20px_rgba(11,26,46,0.18)] animate-fade-in-up"
+              className="group relative flex flex-col gap-4 sm:gap-5 rounded-3xl bg-white border border-hazzin-mist/60 p-6 sm:p-8 lg:p-9 transition-all duration-500 hover:border-hazzin-navy-deep/15 hover:-translate-y-1 hover:shadow-[0_20px_45px_-20px_rgba(11,26,46,0.18)] animate-fade-in-up"
               style={{ animationDelay: `${i * 100}ms` }}
             >
               <div className="flex items-center justify-between">

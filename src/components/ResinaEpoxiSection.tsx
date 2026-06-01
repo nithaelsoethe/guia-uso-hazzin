@@ -42,7 +42,7 @@ export default function ResinaEpoxiSection({
   }, [openCard]);
 
   return (
-    <section className={`relative overflow-hidden py-24 ${bgColor}`}>
+    <section className={`relative overflow-hidden py-16 sm:py-20 lg:py-24 ${bgColor}`}>
       <div
         aria-hidden
         className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 h-px w-[80%] max-w-[640px]"
@@ -60,7 +60,7 @@ export default function ResinaEpoxiSection({
         }}
       />
 
-      <div className="relative mx-auto w-full max-w-site px-6 lg:px-16">
+      <div className="relative mx-auto w-full max-w-site px-5 sm:px-6 lg:px-16">
         <div className="mx-auto max-w-3xl text-center mb-14">
           <span className="inline-flex items-center gap-2 rounded-full border border-hazzin-navy-deep/10 bg-white px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.22em] text-hazzin-navy-deep/70 shadow-sm">
             <Droplets size={12} />

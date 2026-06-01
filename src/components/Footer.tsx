@@ -51,7 +51,7 @@ export default function Footer() {
         Rodapé Hazzin
       </h2>
 
-      <div className="mx-auto w-full max-w-site px-6 py-16 lg:px-16 lg:py-20">
+      <div className="mx-auto w-full max-w-site px-5 sm:px-6 lg:px-16 py-12 sm:py-16 lg:py-20 pb-28 sm:pb-20 lg:pb-20">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-4">
             <img

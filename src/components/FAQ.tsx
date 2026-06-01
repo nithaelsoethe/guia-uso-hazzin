@@ -24,8 +24,8 @@ export default function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="relative py-24 sm:py-32 bg-hazzin-surface scroll-mt-24">
-      <div className="mx-auto w-full max-w-site px-6 lg:px-16">
+    <section id="faq" className="relative py-16 sm:py-24 lg:py-32 bg-hazzin-surface scroll-mt-24">
+      <div className="mx-auto w-full max-w-site px-5 sm:px-6 lg:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           <div className="lg:col-span-5">
             <span className="inline-flex items-center gap-2 rounded-full border border-hazzin-navy-deep/10 bg-white px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.22em] text-hazzin-navy-deep/70 shadow-sm">
@@ -63,7 +63,7 @@ export default function FAQ() {
                     type="button"
                     onClick={() => setOpen(isOpen ? null : i)}
                     aria-expanded={isOpen}
-                    className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
+                    className="flex w-full items-center justify-between gap-3 px-5 sm:px-6 py-4 sm:py-5 text-left"
                   >
                     <span className="font-display text-[16px] sm:text-[17px] font-bold text-hazzin-navy-deep leading-snug tracking-[-0.015em]">
                       {item.q}
@@ -84,7 +84,7 @@ export default function FAQ() {
                     }`}
                   >
                     <div className="overflow-hidden">
-                      <p className="px-6 pb-6 text-[14.5px] leading-[1.7] text-hazzin-ink/65 max-w-[58ch]">
+                      <p className="px-5 sm:px-6 pb-5 sm:pb-6 text-[14px] sm:text-[14.5px] leading-[1.65] sm:leading-[1.7] text-hazzin-ink/65 max-w-[58ch]">
                         {item.a}
                       </p>
                     </div>
