@@ -34,8 +34,8 @@ const NAV: { titulo: string; items: { label: string; href: string; internal?: bo
     items: [
       { label: 'Início', href: 'https://hazzin.com.br/' },
       { label: 'Sobre nós', href: 'https://hazzin.com.br/sobre' },
-      { label: 'Política de privacidade', href: 'https://politicadeprivacidade.hazzin.com.br/' },
-      { label: 'Termos de uso', href: 'https://termosdeuso.hazzin.com.br/' },
+      { label: 'Política de privacidade', href: '/politica-de-privacidade', internal: true },
+      { label: 'Termos de uso', href: '/termos-de-uso', internal: true },
     ],
   },
 ];
