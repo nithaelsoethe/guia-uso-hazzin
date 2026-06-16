@@ -10,8 +10,6 @@ export default function StoreFloatingButton() {
     >
       <a
         href={STORE_URL}
-        target="_blank"
-        rel="noopener noreferrer"
         aria-label="Voltar para a loja virtual Hazzin"
         className="group/store pointer-events-auto relative inline-flex w-full max-w-md items-center justify-between gap-3 overflow-hidden rounded-full px-2 py-2 pl-2 pr-5 text-white shadow-[0_18px_40px_-14px_rgba(11,26,46,0.6)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_22px_48px_-14px_rgba(11,26,46,0.7)] sm:w-auto"
         style={{
