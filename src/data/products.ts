@@ -21,7 +21,7 @@ export const resinaEpoxi: ResinaCard[] = [
   {
     name: 'Baixa Espessura HE2250',
     image: '/produtos/baixa-espessura.png',
-    manualUrl: '',
+    manualUrl: 'https://drive.google.com/file/d/1xHtFu_a5ag4ClVNKb_u00wqtIGXBPTID/view?usp=sharing',
     viscosities: [
       {
         name: 'Baixa Viscosidade (HR1020)',
@@ -37,7 +37,7 @@ export const resinaEpoxi: ResinaCard[] = [
   {
     name: 'Baixa Espessura UV Plus HE1250',
     image: '/produtos/baixa-espessura-uv-plus.png',
-    manualUrl: '',
+    manualUrl: 'https://drive.google.com/file/d/12bkNSH1WyKNEDma9l7_MM_1-QxnqlOsj/view?usp=sharing',
     viscosities: [
       {
         name: 'Baixa Viscosidade (HR1020)',
@@ -59,7 +59,7 @@ export const resinaEpoxi: ResinaCard[] = [
   {
     name: 'Média Espessura HE2230',
     image: '/produtos/media-espessura.png',
-    manualUrl: '',
+    manualUrl: 'https://drive.google.com/file/d/1kPMl9_PaReNkvhglpXTz2wvUZ8TtNDCx/view?usp=sharing',
     viscosities: [
       {
         name: 'Baixa Viscosidade (HR1020)',
@@ -71,7 +71,7 @@ export const resinaEpoxi: ResinaCard[] = [
   {
     name: 'Alta Espessura UV Plus HE2240',
     image: '/produtos/alta-espessura-uv-plus.png',
-    manualUrl: '',
+    manualUrl: 'https://drive.google.com/file/d/1axket3lvgoNaSWDEarRs9WAe4UbWECGW/view?usp=sharing',
     viscosities: [
       {
         name: 'Baixa Viscosidade (HR1020)',
