@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { peekWhatsAppUrl, rotatingWhatsAppHandler } from '../lib/whatsapp';
 
 const PAGE_LINKS = [
   { label: 'Início', to: '/', external: false },
@@ -8,9 +9,7 @@ const PAGE_LINKS = [
   { label: 'Dúvidas', to: '/#faq', external: false },
 ];
 
-const WHATSAPP_URL =
-  'https://wa.me/5547996221680?text=' +
-  encodeURIComponent('Olá! Quero solicitar orçamento técnico Hazzin.');
+const WA_TEXT = 'Olá! Quero solicitar orçamento técnico Hazzin.';
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -69,7 +68,8 @@ export default function Header() {
           })}
 
           <a
-            href={WHATSAPP_URL}
+            href={peekWhatsAppUrl(WA_TEXT)}
+            onClick={rotatingWhatsAppHandler(WA_TEXT)}
             target="_blank"
             rel="noopener noreferrer"
             className="ml-8 inline-flex items-center gap-2 rounded-full bg-gradient-to-b from-hazzin-field-green to-hazzin-field-green-deep px-6 py-2.5 text-[14px] font-bold text-white ring-2 ring-hazzin-field-green/40 shadow-[0_0_28px_rgba(55,135,14,0.6),inset_0_1px_0_rgba(255,255,255,0.25)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_42px_rgba(55,135,14,0.8)]"
@@ -133,10 +133,13 @@ export default function Header() {
             </div>
             <div className="mt-6 border-t border-white/[0.06] pt-6">
               <a
-                href={WHATSAPP_URL}
+                href={peekWhatsAppUrl(WA_TEXT)}
+                onClick={(e) => {
+                  setOpen(false);
+                  rotatingWhatsAppHandler(WA_TEXT)(e);
+                }}
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => setOpen(false)}
                 className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-b from-hazzin-field-green to-hazzin-field-green-deep px-6 py-3 text-[14px] font-bold text-white"
               >
                 Solicitar orçamento

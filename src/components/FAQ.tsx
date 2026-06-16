@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import { Plus, Minus, MessageCircle } from 'lucide-react';
+import { peekWhatsAppUrl, rotatingWhatsAppHandler } from '../lib/whatsapp';
+
+const FAQ_WA_TEXT = 'Olá! Tenho uma dúvida técnica sobre os sistemas Hazzin.';
 
 const ITEMS = [
   {
@@ -39,7 +42,8 @@ export default function FAQ() {
             </p>
 
             <a
-              href={`https://wa.me/5547996221680?text=${encodeURIComponent('Olá! Tenho uma dúvida técnica sobre os sistemas Hazzin.')}`}
+              href={peekWhatsAppUrl(FAQ_WA_TEXT)}
+              onClick={rotatingWhatsAppHandler(FAQ_WA_TEXT)}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-8 inline-flex items-center gap-2.5 rounded-full bg-hazzin-navy-deep px-5 py-3 text-[13.5px] font-bold text-white hover:bg-hazzin-navy transition-colors"
